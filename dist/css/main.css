@@ -159,12 +159,12 @@ a:hover {
   background: #f2f2f2;
   font-size: 16px;
   font-family: "Ceorgia";
-  min-width: 260px;
+  min-width: 300px;
+  position: relative;
 }
 
 .header {
   padding: 0;
-  overflow-y: hidden;
 }
 
 .header__border-top {
@@ -176,12 +176,16 @@ a:hover {
 }
 
 .header__fon {
-  height: 235px;
+  height: 233px;
   position: relative;
   background: url(../img/header-fon.png);
   background-position: 50%;
   background-size: cover;
   background-position: 50% 100%;
+}
+
+.header__container {
+  position: relative;
 }
 
 .header-main {
@@ -230,8 +234,10 @@ a:hover {
 }
 
 .images {
-  position: relative;
-  top: -130px;
+  width: 100%;
+  position: absolute;
+  top: 93px;
+  left: 0;
 }
 
 .images__main {
@@ -292,10 +298,11 @@ a:hover {
 
 /*menu*/
 
-/*menu2*/
+/*menu*/
 
 .nav2 {
-  margin-bottom: 50px;
+  width: 90%;
+  margin: 0 auto;
   font-size: 0px;
   -webkit-border-radius: 20px 21px 21px 20px / 30px 30px 29px 29px;
   border-radius: 20px 21px 21px 20px / 30px 30px 29px 29px;
@@ -319,6 +326,8 @@ a:hover {
 }
 
 .menu__list2 {
+  display: block;
+  text-align: center;
   float: left;
   position: relative;
 }
@@ -339,23 +348,23 @@ a:hover {
   background-image: linear-gradient(to left, rgba(254, 254, 254, 0.2), rgba(206, 206, 206, 0.2));
 }
 
-.menu__link2 {
+.nav .menu__link2 {
   position: relative;
   display: block;
   padding: 21px 29px;
   font-size: 14px;
-  color: #ccc;
+  color: #ccc !important;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.75), 0 -1px 1px rgba(0, 0, 0, 0.75), 0 0 2px #ffffff;
 }
 
-.menu__link2:hover,
-.menu__link2:focus {
+.nav .menu__link2:hover,
+.nav .menu__link2:focus {
   color: #ccc;
   text-decoration: none;
 }
 
-.menu__link2:hover:after,
-.menu__link2:focus:after {
+.nav .menu__link2:hover:after,
+.nav .menu__link2:focus:after {
   content: "";
   position: absolute;
   bottom: 18px;
@@ -375,11 +384,11 @@ a:hover {
 .search2-wrap {
   float: right;
   font-size: 0px;
-  width: 30%;
+  width: 85%;
 }
 
 .search2 {
-  margin-top: 13px;
+  margin-top: 15px;
 }
 
 .search2__input {
@@ -424,6 +433,23 @@ a:hover {
 
 .navbar .navbar-toggle2 {
   float: left;
+  margin-left: 30px;
+  background: #ddd;
+}
+
+.navbar .navbar-toggle2:hover {
+  background: #ffffff;
+}
+
+.navbar-header2 {
+  width: 30%;
+  float: right;
+}
+
+.collapse2 {
+  padding-left: 70px;
+  width: 70%;
+  float: left;
 }
 
 /*footer*/
@@ -449,8 +475,12 @@ a:hover {
     right: 80px;
   }
 
-  .menu__link2 {
-    padding: 21px 21px;
+  .nav2 {
+    width: 95%;
+  }
+
+  .nav .menu__link2 {
+    padding: 21px 19px;
   }
 }
 
@@ -469,14 +499,16 @@ a:hover {
     width: 90%;
   }
 
-  .menu__link2 {
-    padding: 21px 15px;
+  .nav .menu__link2 {
+    padding: 21px 11px;
   }
-}
 
-@media screen and (max-width: 991px) {
-  .images__main {
-    width: 85%;
+  .search2-wrap {
+    width: 100%;
+  }
+
+  .collapse2 {
+    padding-left: 30px;
   }
 }
 
@@ -498,6 +530,10 @@ a:hover {
 
   .header-main__fonMan {
     background-position: 0 -7px;
+  }
+
+  .images {
+    top: 85px;
   }
 
   .images__main {
@@ -526,8 +562,21 @@ a:hover {
     display: none;
   }
 
-  .search2-wrap {
-    width: 40%;
+  .menu__list2 {
+    float: none;
+  }
+
+  .menu__list2:after {
+    display: none;
+  }
+
+  .nav .menu__link2 {
+    color: white;
+  }
+
+  .nav .menu__link2:hover:after,
+  .nav .menu__link2:focus:after {
+    bottom: 10px;
   }
 
   .search2-wrap {
@@ -535,7 +584,31 @@ a:hover {
   }
 
   .search2-wrap {
-    margin-top: 8px;
+    margin-top: -5px;
+  }
+
+  .search2 {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav .menu__link2 {
+    padding: 10px 15px;
+  }
+
+  .search2-wrap {
+    width: 50%;
+  }
+
+  .navbar-header2 {
+    float: left;
+    width: 100%;
+  }
+
+  .collapse2 {
+    float: right;
+    width: 100%;
   }
 }
 
@@ -547,6 +620,10 @@ a:hover {
 }
 
 @media screen and (max-width: 480px) {
+  .header__fon {
+    height: 200px;
+  }
+
   .logo__link-img {
     width: 150%;
   }
@@ -560,13 +637,27 @@ a:hover {
   }
 
   .images {
-    top: -160px;
+    top: 85px;
   }
 
   .images__img {
     width: 140%;
   }
 
+  .site-map {
+    right: 0px;
+  }
+
+  .menu2-wrap {
+    width: 50%;
+  }
+
+  .search2-wrap {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 320px) {
   .images__text {
     font-size: 14px;
   }
@@ -575,11 +666,7 @@ a:hover {
     right: -10px;
   }
 
-  .menu2-wrap {
-    width: 50%;
-  }
-
-  .search2-wrap {
-    width: 50%;
+  .navbar .navbar-toggle2 {
+    margin-left: 10px;
   }
 }

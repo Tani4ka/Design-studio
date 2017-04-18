@@ -19,7 +19,7 @@
 <header class="header container-fluid">
     <div class="header__border-top"></div>
     <div class="header__fon">
-        <div class="container">
+        <div class="container header__container">
             <div class="header-main">
                 <div class="logo logo_wrap">
                     <div class="lolo-gradient"></div>
@@ -28,57 +28,73 @@
                 </div>
                 <div class="header-main__fonMan"></div>
             </div>
+
+            <div class="images">
+                <div class="images__main">
+                    <div class="images__item ">
+                        <img class="images__img" src="img/design.png"></img>
+                        <div class="images__text">Design</div>
+                    </div>
+                    <div class="images__item">
+                        <img class="images__img" src="img/progect.png"></img>
+                        <div class="images__text">Progect</div>
+                    </div>
+                    <div class="images__item">
+                        <img class="images__img" src="img/encoding.png"></img>
+                        <div class="images__text">Encoding</div>
+                    </div>
+                    <div class="images__item">
+                        <img class="images__img" src="img/studio.png"></img>
+                        <div class="images__text">Studio 8</div>
+                    </div>
+                </div>
+                <div class="site-map"></div>
+            </div>
         </div>
     </div>
 </header>
-<div class="container images">
-    <div class="images__main">
-        <div class="images__item ">
-            <img class="images__img" src="img/design.png"></img>
-            <div class="images__text">Design</div>
-        </div>
-        <div class="images__item">
-            <img class="images__img" src="img/progect.png"></img>
-            <div class="images__text">Progect</div>
-        </div>
-        <div class="images__item">
-            <img class="images__img" src="img/encoding.png"></img>
-            <div class="images__text">Encoding</div>
-        </div>
-        <div class="images__item">
-            <img class="images__img" src="img/studio.png"></img>
-            <div class="images__text">Studio 8</div>
-        </div>
-    </div>
-    <div class="site-map"></div>
-</div>
 
 <!--<div class="container">-->
-    <!--<nav class="nav">-->
-        <!--<ul class="menu">-->
-            <!--<li class="menu__list menu__list_grow2"><a class="menu__link" href="#"></a></li>-->
-            <!--<li class="menu__list menu__list_grow2"><a class="menu__link" href="#">Home</a></li>-->
-            <!--<li class="menu__list"><a class="menu__link" href="#">About</a></li>-->
-            <!--<li class="menu__list"><a class="menu__link" href="#">Portfolio</a></li>-->
-            <!--<li class="menu__list"><a class="menu__link" href="#">Download</a></li>-->
-            <!--<li class="menu__list"><a class="menu__link" href="#">Freebies</a></li>-->
-            <!--<li class="menu__list"><a class="menu__link" href="#">Contact</a></li>-->
-            <!--<li class="menu__list menu__list_grow4">-->
-                <!--<div class="search">-->
-                    <!--<div class="search__input"></div>-->
-                    <!--<button class="search__button"></button>-->
-                <!--</div>-->
-            <!--</li>-->
-        <!--</ul>-->
+    <!--<nav class="navig">-->
+        <!--<div class="menu-wrap">-->
+            <!--<ul class="menu">-->
+                <!--<li class="menu__list"><a class="menu__link" href="#">Home</a></li>-->
+                <!--<li class="menu__list"><a class="menu__link" href="#">About</a></li>-->
+                <!--<li class="menu__list"><a class="menu__link" href="#">Portfolio</a></li>-->
+                <!--<li class="menu__list"><a class="menu__link" href="#">Download</a></li>-->
+                <!--<li class="menu__list"><a class="menu__link" href="#">Freebies</a></li>-->
+                <!--<li class="menu__list"><a class="menu__link" href="#">Contact</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <!--<form class="search-wrap">-->
+            <!--<div class="search">-->
+                <!--<input type="text" class="search__input"></input>-->
+                <!--<button class="search__button"></button>-->
+            <!--</div>-->
+        <!--</form>-->
     <!--</nav>-->
 <!--</div>-->
 
-
 <div class="container">
-    <nav class="nav2">
-        <div class="menu2-wrap">
-            <ul class="menu2">
-                <li class="menu__list2"><a class="menu__link2" href="#">Home</a></li>
+    <nav class="navbar navbar-default nav2">
+        <div class="navbar-header navbar-header2">
+            <button type="button" class="navbar-toggle navbar-toggle2 collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <form class="search2-wrap">
+                <div class="search2">
+                    <input type="text" class="search2__input"></input>
+                    <button class="search2__button"></button>
+                </div>
+            </form>
+        </div>
+
+        <div class="collapse collapse2 navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="menu__list2 active2"><a class="menu__link2" href="#">Home</a></li>
                 <li class="menu__list2"><a class="menu__link2" href="#">About</a></li>
                 <li class="menu__list2"><a class="menu__link2" href="#">Portfolio</a></li>
                 <li class="menu__list2"><a class="menu__link2" href="#">Download</a></li>
@@ -86,14 +102,9 @@
                 <li class="menu__list2"><a class="menu__link2" href="#">Contact</a></li>
             </ul>
         </div>
-        <form class="search2-wrap">
-            <div class="search2">
-                <input type="text" class="search2__input"></input>
-                <button class="search2__button"></button>
-            </div>
-        </form>
     </nav>
 </div>
+
 
 
 <div class="footer container">
