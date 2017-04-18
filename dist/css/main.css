@@ -302,7 +302,7 @@ a:hover {
 
 .nav2 {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   font-size: 0px;
   -webkit-border-radius: 20px 21px 21px 20px / 30px 30px 29px 29px;
   border-radius: 20px 21px 21px 20px / 30px 30px 29px 29px;
@@ -452,6 +452,34 @@ a:hover {
   float: left;
 }
 
+/*carosel*/
+
+.carosel {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.55), 0 -1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.55), 0 -1px 1px rgba(0, 0, 0, 0.25);
+  border: solid 4px #e5e5e5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#cecece));
+  background-image: -webkit-linear-gradient(top, #fefefe, #cecece);
+  background-image: linear-gradient(to bottom, #fefefe, #cecece);
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 323px;
+  height: 255px;
+}
+
 /*footer*/
 
 .footer {
@@ -551,7 +579,7 @@ a:hover {
   }
 
   .site-map {
-    right: 5px;
+    right: 15px;
   }
 
   .menu2-wrap {

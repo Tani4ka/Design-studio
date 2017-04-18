@@ -46,11 +46,20 @@ gulp.task('scripts', function() {
         'app/libs/jquery/dist/jquery.min.js',
         'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
         'app/libs/bootstrap/dist/js/bootstrap.min.js',
-        'app/libs/owl-carousel/owl-carousel/owl.carousel.min.js'
+        'app/libs/owl-carousel/owl-carousel/owl.carousel.min.js',
+        'app/libs/Swiper-master/dist/js/swiper.min.js'
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('app/js'));
+})
+
+gulp.task('libs', function() {
+    return gulp.src([
+        'app/libs/Swiper-master/dist/css/swiper.css'
+    ])
+        //.pipe(uglify())
+        .pipe(gulp.dest('app/css'));
 })
 
 gulp.task('css-libs', ['less'], function(){
@@ -76,7 +85,7 @@ gulp.task('img', function() {
 });
 
 gulp.task('build', ['clean', 'img', 'less', 'scripts'], function() {
-    var buildCss = gulp.src(['app/css/main.css', 'app/css/libs.min.css', 'app/css/fonts.css'])
+    var buildCss = gulp.src(['app/css/main.css', 'app/css/libs.min.css', 'app/css/fonts.css', 'app/css/swiper.css'])
         .pipe(gulp.dest('dist/css'));
 
     var buidFonts = gulp.src('app/fonts/**/*')

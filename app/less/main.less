@@ -136,7 +136,7 @@ a:hover{
   right: 200px;
   .lg(right, 80px);
   .md(right, 50px);
-  .sm(right, 5px);
+  .sm(right, 15px);
   .xs(right, 0px);
   .xxs(right, -10px);
   background: url(../img/sprite.png)  -9px -3px no-repeat;
@@ -276,7 +276,7 @@ a:hover{
 .nav2 {
   width: 90%;
   .lg(width, 95%);
-  margin: 0 auto;
+  margin: 0 auto 20px;
   font-size: 0px;
   border-radius: 20px 21px 21px 20px ~"/" 30px 30px 29px 29px;
   background-color: #fff;
@@ -442,7 +442,29 @@ a:hover{
   }
 }
 
+                                    /*carosel*/
 
+.carosel {
+  box-shadow: inset 0 0 5px rgba(0,0,0,.55), 0 -1px 1px rgba(0,0,0,.25);
+  border: solid 4px #e5e5e5;
+  background-image: linear-gradient(to bottom, #fefefe, #cecece);
+  border-radius: 30px;
+  width: 98%;
+  margin: 0 auto;
+  //height: 358px;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 323px;
+  height: 255px;
+}
 
 
 
