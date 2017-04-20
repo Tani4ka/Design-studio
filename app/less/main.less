@@ -445,38 +445,207 @@ a:hover{
                                     /*carosel*/
 
 .carosel {
+  position: relative;
   box-shadow: inset 0 0 5px rgba(0,0,0,.55), 0 -1px 1px rgba(0,0,0,.25);
   border: solid 4px #e5e5e5;
   background-image: linear-gradient(to bottom, #fefefe, #cecece);
   border-radius: 30px;
   width: 98%;
-  margin: 0 auto;
-  //height: 358px;
+  margin: 0 auto 30px;
+  &:before,
+  &:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    width: 42px;
+    height: 43px;
+    background: #ececec url(../img/sprite.png) -161px -1px no-repeat;
+    border-radius: 50%;
+    border: solid 1px #cbcbcb;
+    z-index: 5;
+  }
+  &:before{
+    left: -15px;
+    transform: rotate(180deg);
+  }
+  &:after{
+    right: -15px;
+  }
 }
 
 .swiper-container {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 75px;
+
 }
+
 .swiper-slide {
+  //position: relative;
   background-position: center;
   background-size: cover;
   width: 323px;
   height: 255px;
+  //&:after{
+  //  content: "";
+  //  position: absolute;
+  //  left: 0;
+  //  bottom: -40px;
+  //  width: 250px;
+  //  height: 1px;
+  //  background: rgba(196, 196, 196, 0.55);
+  //  box-shadow: 0px 0px 12px 10px rgba(185, 185, 185, 0.55);
+  //  border-radius: 50%;
+  //}
 }
 
+                                    /*topic*/
 
+//.topic_wrap{
+//  padding-left: 0px;
+//  padding-right: 0px;
+//}
+
+.topic{
+  .row-flex();
+  .justify-content(space-around)
+}
+
+.topic__item{
+  .col-4();
+  .col-sm-10();
+  .col-xs-11();
+  padding-left: 8%;
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 16px;
+    width: 95px;
+    height: 60px;
+    z-index: -1;
+    background: url(../img/sprite.png) -238px -51px no-repeat;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    right: -15px;
+    bottom: 0px;
+    width: 1px;
+    height: 97%;
+    background-color: #ccc;
+    .sm(display, none);
+  }
+}
+.topic__item_bg2:before{
+  left: -12px;
+  background: url(../img/sprite.png) -127px -50px no-repeat;
+}
+.topic__item_bg3:before{
+  left: -12px;
+  background: url(../img/sprite.png) -13px -64px no-repeat;
+}
+.topic__item_bg3:after{
+  display: none;
+}
+
+.topic__title{
+  position: relative;
+  font-size: 18px;
+  height: 50px;
+  color: #006969;
+  margin-bottom: 10px;
+  .md(margin-bottom, 15px);
+  padding-left: 40px;
+  &:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 27px;
+    height: 27px;
+    background: url(../img/sprite.png) -82px -14px no-repeat;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+    width: 80%;
+    height: 1px;
+    z-index: -1;
+    background-color: #ccc;
+    .sm(left, 50px);
+  }
+}
+
+.topic__text{
+  font-family: "CenturyGothic";
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.topic__img-title{
+  margin: 15px 0 5px;
+  font-family: "CenturyGothic";
+}
+
+.topic__figure{
+  width: 105px;
+  height: 100px;
+  background: url(../img/sprite.png) -6px -127px no-repeat;
+}
+.topic__figure_bg2 {
+  margin-left: -7px;
+  width: 208px;
+  height: 89px;
+  background: url(../img/sprite.png) -117px -106px no-repeat;
+  .md(margin-left, -32px);
+  .sm(margin-left, -7px);
+}
+.topic__figure_bg3 {
+  margin-top: 10px;
+  width: 150px;
+  background: url(../img/sprite.png) -6px -223px no-repeat;
+}
+
+.topic__figure_bg2,
+.topic__figure_bg3{
+  position: relative;
+  &:after{
+    content: "";
+    position: absolute;
+    left: 20px;
+    bottom: -4px;
+    width: 170px;
+    height: 1px;
+    background-color: rgba(188, 188, 188, 0.99);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 7px rgba(180, 180, 180, 0.85);
+  }
+}
+.topic__figure_bg3:after{
+  left: -5px;
+  bottom: 20px;
+}
 
                                         /*footer*/
+
 .footer{
-  margin-top: 100px;
-  font-family: "Georgia";
-  text-transform: uppercase;
+  background-color: #353535;
+  height: 300px;
+  padding: 1px 0 0;
 }
-.footer2{
-  font-family: "Verdana-Bold";
-  text-transform: uppercase;
+
+.footer-border{
+  height: 5px;
+  border-top: solid 1px #5f5f64;
+  border-bottom: solid 2px rgba(127, 127, 127, 0.91);
+  background-image: linear-gradient(to top, #ebebeb 50%, #bdbdbd 50%);
+
 }
+
 
 

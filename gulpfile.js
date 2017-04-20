@@ -58,7 +58,7 @@ gulp.task('libs', function() {
     return gulp.src([
         'app/libs/Swiper-master/dist/css/swiper.css'
     ])
-        //.pipe(uglify())
+        //.pipe(rename('libs.css'))
         .pipe(gulp.dest('app/css'));
 })
 
