@@ -1,26 +1,51 @@
-/* font-family: "Georgia"; */
 @font-face {
     font-family: "Georgia";
-    src: url(".app/fonts/Georgia/fonts/Georgia.eot"); /* IE9 Compat Modes */
-    src: url(".app/fonts/Georgia/fonts/Georgia.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url(".app/fonts/Georgia/fonts/Georgia.otf") format("opentype"), /* Open Type Font */
-    url(".app/fonts/Georgia/fonts/Georgia.svg") format("svg"), /* Legacy iOS */
-    url(".app/fonts/Georgia/fonts/Georgia.ttf") format("truetype"), /* Safari, Android, iOS */
-    url(".app/fonts/Georgia/fonts/Georgia.woff") format("woff"), /* Modern Browsers */
-    url(".app/fonts/Georgia/fonts/Georgia.woff2") format("woff2"); /* Modern Browsers */
+    src: url("../fonts/Georgia/fonts/Georgia.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/Georgia/fonts/Georgia.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Georgia/fonts/Georgia.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/Georgia/fonts/Georgia.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/Georgia/fonts/Georgia.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Georgia/fonts/Georgia.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Georgia/fonts/Georgia.woff2") format("woff2"); /* Modern Browsers */
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Verdana-Bold";
-    src: url(".app/fonts/Verdana-Bold/fonts/VerdanaBold.eot"); /* IE9 Compat Modes */
-    src: url(".app/fonts/Verdana-Bold/fonts/VerdanaBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url(".app/fonts/Verdana-Bold/fonts/VerdanaBold.otf") format("opentype"), /* Open Type Font */
-    url(".app/fonts/Verdana-Bold/fonts/VerdanaBold.svg") format("svg"), /* Legacy iOS */
-    url(".app/fonts/Verdana-Bold/fonts/VerdanaBold.ttf") format("truetype"), /* Safari, Android, iOS */
-    url(".app/fonts/Verdana-Bold/fonts/VerdanaBold.woff") format("woff"), /* Modern Browsers */
-    url(".app/fonts/Verdana-Bold/fonts/VerdanaBold.woff2") format("woff2"); /* Modern Browsers */
+    src: url("../fonts/Verdana-Bold/fonts/VerdanaBold.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/Verdana-Bold/fonts/VerdanaBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Verdana-Bold/fonts/VerdanaBold.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/Verdana-Bold/fonts/VerdanaBold.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/Verdana-Bold/fonts/VerdanaBold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Verdana-Bold/fonts/VerdanaBold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Verdana-Bold/fonts/VerdanaBold.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CenturyGothic";
+    src: url("../fonts/CenturyGothic/fonts/911FontscomCenturyGothicRegular-911fontscom-fonts-mhpY.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/CenturyGothic/fonts/911FontscomCenturyGothicRegular-911fontscom-fonts-mhpY.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/CenturyGothic/fonts/911FontscomCenturyGothicRegular-911fontscom-fonts-mhpY.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/CenturyGothic/fonts/911FontscomCenturyGothicRegular-911fontscom-fonts-mhpY.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/CenturyGothic/fonts/911FontscomCenturyGothicRegular-911fontscom-fonts-mhpY.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/CenturyGothic/fonts/911FontscomCenturyGothicRegular-911fontscom-fonts-mhpY.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/CenturyGothic/fonts/911FontscomCenturyGothicRegular-911fontscom-fonts-mhpY.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyriadPro-Regular";
+    src: url("../fonts/MyriadPro-Regular/fonts/MyriadPro-Regular.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/MyriadPro-Regular/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/MyriadPro-Regular/fonts/MyriadPro-Regular.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/MyriadPro-Regular/fonts/MyriadPro-Regular.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/MyriadPro-Regular/fonts/MyriadPro-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/MyriadPro-Regular/fonts/MyriadPro-Regular.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/MyriadPro-Regular/fonts/MyriadPro-Regular.woff2") format("woff2"); /* Modern Browsers */
     font-weight: normal;
     font-style: normal;
 }
