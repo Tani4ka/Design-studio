@@ -87,7 +87,7 @@
                 <span class="icon-bar"></span>
             </button>
             <form class="search2-wrap">
-                <div class="search2">
+                <div class="search2 clearfix">
                     <input type="text" class="search2__input">
                     <button class="search2__button"></button>
                 </div>
@@ -146,8 +146,8 @@
         <div class="carousel2__container carousel2__container_3d">
             <div class="carousel2__wrapper">
                 <div class="carousel2__slide carousel2__slide_prev" style="background-image:url(img/fought2.png)"></div>
-                <div class="carousel2__slide carousel2__slide_active" style="background-image:url(img/third.jpg)"></div>
-                <div class="carousel2__slide carousel2__slide_next" style="background-image:url(img/fast2.png)"></div>
+                <div class="carousel2__slide carousel2__slide2 carousel2__slide_active" style="background-image:url(img/third.jpg)"></div>
+                <div class="carousel2__slide carousel2__slide3 carousel2__slide_next" style="background-image:url(img/fast2.png)"></div>
             </div>
         </div>
     </div>
@@ -195,7 +195,7 @@
 </div>
 
 
-<div class="container-fluid footer">
+<footer class="container-fluid footer">
     <div class="footer__border"></div>
     <div class="container">
         <div class="footer__blocks">
@@ -242,25 +242,24 @@
             </div>
         </div>
     </div>
-</div>
+</footer>
 
-<div class="container-fluid copyright">
+<footer class="container-fluid copyright">
     <div class="container">
-        <div class="copyright__flex">
-            <ul class="copyright__menu clearfix">
-                <li class="copyright__list active2"><a class="copyright__link" href="#">Home</a></li>
-                <li class="copyright__list"><a class="copyright__link" href="#">About</a></li>
-                <li class="copyright__list"><a class="copyright__link" href="#">Portfolio</a></li>
-                <li class="copyright__list"><a class="copyright__link" href="#">Download</a></li>
-                <li class="copyright__list"><a class="copyright__link" href="#">Freebies</a></li>
-                <li class="copyright__list"><a class="copyright__link" href="#">Inspiration</a></li>
-                <li class="copyright__list copyright__list_last"><a class="copyright__link" href="#">Contact</a></li>
+        <div class="footer__flex">
+            <ul class="footer__menu clearfix">
+                <li class="footer__list active2"><a class="footer__link" href="#">Home</a></li>
+                <li class="footer__list"><a class="footer__link" href="#">About</a></li>
+                <li class="footer__list"><a class="footer__link" href="#">Portfolio</a></li>
+                <li class="footer__list"><a class="footer__link" href="#">Download</a></li>
+                <li class="footer__list"><a class="footer__link" href="#">Freebies</a></li>
+                <li class="footer__list"><a class="footer__link" href="#">Inspiration</a></li>
+                <li class="footer__list footer__list_last"><a class="footer__link" href="#">Contact</a></li>
             </ul>
             <div class="copyright__text">Copyright <span class="copyright__text-date">2010</span> Imediacreatives.it</div>
         </div>
     </div>
-</div>
-
+</footer>
 
 
                               <!--scripts-->
@@ -270,23 +269,21 @@
     <script src="js/app.js"></script>
     <script src="js/block/carousel.js"></script>
     <script src="js/block/carousel2.js"></script>
-
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            effect: 'coverflow',
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: 'auto',
-            coverflow: {
-                rotate: 10,
-                stretch: 150,
-                depth: 100,
-                modifier: 1,
-                slideShadows : false
-            }
-        });
-    </script>
-
+    <!--<script>-->
+        <!--var swiper = new Swiper('.swiper-container', {-->
+            <!--pagination: '.swiper-pagination',-->
+            <!--effect: 'coverflow',-->
+            <!--grabCursor: true,-->
+            <!--centeredSlides: true,-->
+            <!--slidesPerView: 'auto',-->
+            <!--coverflow: {-->
+                <!--rotate: 10,-->
+                <!--stretch: 150,-->
+                <!--depth: 100,-->
+                <!--modifier: 1,-->
+                <!--slideShadows : false-->
+            <!--}-->
+        <!--});-->
+    <!--</script>-->
 </body>
 </html>

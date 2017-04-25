@@ -369,24 +369,25 @@ a:hover{
 }
 
 .search2{
+  height: 24px;
   margin-top: 15px;
   .sm(margin-top, 15px);
   &__input{
-    display: inline-block;
+    float: left;
     box-shadow: 0 -3px 3px rgba(153,153,153,.11);
     border: solid 1px #666;
     border-radius: 12px 0 0 12px;
     width: 70%;
-    height: 24px;
+    height: 100%;
     background: @white;
-    font-size: 14px;
+    //font-size: 14px;
     padding-left: 10px;
   }
   &__button {
     position: relative;
     left: -1px;
-    top: 3px;
-    display: inline-block;
+    top: 1px;
+    float: left;
     width: 37px;
     height: 22px;
     background-color: rgba(0,55,98,0);
@@ -976,7 +977,7 @@ a:hover{
   box-shadow: 0 2px 0px #cecece;
 }
 
-.copyright__flex{
+.footer__flex{
   .row-flex();
   .justify-content(center);
 }
@@ -995,7 +996,7 @@ a:hover{
   }
 }
 
-.copyright__menu{
+.footer__menu{
   .col-8();
   .col-md-12();
   .row-flex();
@@ -1006,7 +1007,7 @@ a:hover{
   .xs(padding, 10px 0);
 }
 
-.copyright__list{
+.footer__list{
   .col-float();
   position: relative;
   &:after{
@@ -1024,7 +1025,7 @@ a:hover{
   }
 }
 
-.copyright__link{
+.footer__link{
   display: block;
   padding: 4px 26px;
   .lg(padding, 4px 18px);
