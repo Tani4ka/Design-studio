@@ -260,9 +260,9 @@ a:hover{
 }
 .search-wrap{
   float: right;
-  font-size: 0px;
   width: 30%;
   .xs(width, 65%);
+
 }
 
 .search-wrap-sm{
@@ -275,15 +275,17 @@ a:hover{
 }
 
 .search{
-  margin-top: 16px;
+  margin-top: 18px;
+  .sm(margin-top, 22px);
   text-align: center;
+  padding-right: 40px;
   .md(padding-right, 20px);
   &__input{
-    display: inline-block;
+    float: right;
     box-shadow: 0 -3px 3px rgba(153,153,153,.11);
     border: solid 1px #666;
     border-radius: 12px 0 0 12px;
-    width: 60%;
+    width: 70%;
     .md(width, 75%);
     height: 24px;
     background: @white;
@@ -293,8 +295,8 @@ a:hover{
   &__button {
     position: relative;
     left: -1px;
-    top: 3px;
-    display: inline-block;
+    top: 1px;
+    float: right;
     width: 37px;
     height: 22px;
     background-color: rgba(0,55,98,0);
